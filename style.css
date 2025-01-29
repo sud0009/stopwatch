@@ -1,0 +1,84 @@
+/* Base Styles */
+body {
+    background-color: rgba(125, 126, 129, 0.508);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.stop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile-First Styles */
+.container {
+    background-image: url('https://media.istockphoto.com/id/886152578/photo/stopwatch-on-wood-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=z5AwInOFdNg9PhW1HjFwNAuW8oHwlhNFfXL1hglUB7g=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(46, 48, 47, 0.73); /* Fallback color */
+    width: 90%;
+    max-width: 500px;
+    padding: 5%;
+    text-align: center;
+    border: 3px solid rgb(131, 13, 13);
+    margin: 4% auto;
+    box-sizing: border-box;
+}
+
+.container .txt {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+
+.container button {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(233, 13, 13);
+    color: white;
+    margin: 10px auto;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    display: block;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 600px) {
+    .container {
+        width: 80%;
+        padding: 4%;
+    }
+
+    .container .txt {
+        font-size: 3rem;
+    }
+
+    .container button {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+        padding: 3%;
+    }
+
+    .container .txt {
+        font-size: 3.5rem;
+    }
+
+    .container button {
+        font-size: 1.2rem;
+    }
+}
